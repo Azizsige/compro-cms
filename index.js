@@ -5,7 +5,7 @@ const app = express();
 const config = require("./config");
 
 // Routes
-// const authRoutes = require("./routes/authRoutes");
+const authRoutes = require("./routes/auth.route");
 // const roleRoutes = require("./routes/roleRoutes");
 // const userRoutes = require("./routes/userRoute");
 
@@ -24,7 +24,7 @@ app.use(cors());
 
 // URL Routes
 // Routes
-// app.use("/api/auth", authRoutes);
+app.use("/api/auth", authRoutes);
 // app.use("/api", roleRoutes);
 // app.use("/api", userRoutes);
 
